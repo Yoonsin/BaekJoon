@@ -2,7 +2,7 @@
 #define MAX 1000
 using namespace std;
 
-//https://imnotabear.tistory.com/81 참고
+//https://cocoon1787.tistory.com/498 참고
 int arr[MAX + 1][3];
 int dp[MAX + 1][3];
 int main(int argc, char** argv) {
@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
 			if (i == j) dp[1][j] = arr[1][j];
-			else dp[1][j] = MAX+1;
+			else dp[1][j] = 1000001;
 		}
 
 		for (int j = 2; j <= n; j++) {
