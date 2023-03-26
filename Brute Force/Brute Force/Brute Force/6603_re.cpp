@@ -22,7 +22,7 @@ void dfs(int start, int depth)
 	//재귀: 재귀가 return되면 다시 다음 문자에 대해 dfs
 	for (int i = start; i < num; i++) {
 		ans[depth] = lotto[i];
-		dfs(i + 1, depth + 1);
+		dfs(i depth + 1);
 	}
 }
 
